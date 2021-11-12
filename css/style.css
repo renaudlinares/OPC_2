@@ -34,7 +34,6 @@ ul
 
 .main_wrapper {
     display: flex;
-    width: content-box;
     flex-wrap: wrap;
     background-color: #ffffff;
     max-width: 992px;
