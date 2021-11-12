@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!--TEST COMMIT 2-->
+
 <head>
 	<meta charset="UTF-8" content="Booki, site d'hébergement vacances">
-	<meta name="viewport" content="width=device-width">
 	<title>Booki hébergement vacances</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">-->
+	<!--        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+
+<!--	<script src="https://kit.fontawesome.com/1de2c100d9.js" crossorigin="anonymous"></script>-->
+
+
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
@@ -18,7 +28,7 @@
 	<header id="header" class="header">
 
 		<a href="index.html" id="home" class="logo_home">
-			<img src="assets/Logo_home.png" alt="logo_home"/>
+			<img src="assets/Logo_home.png"/>
 		</a>
 
 		<nav id="nav" class="nav">
@@ -32,38 +42,37 @@
 
 		<form method="post" action="#" class="search-form">
 			<label for="search">
-				<span>Trouver votre hébergement pour des vacances de rêve : </span>
-				<span>En plein centre ville ou en pleine nature </span>
+				<h1>Trouver votre hébergement pour des vacances de rêve : </h1>
+				<h2>En plein centre ville ou en pleine nature </h2>
 			</label>
 			<div class="input-wrapper">
-		                        <span class="map">
-		                            <a href="#"><img src="assets/picto_map.gif"></a>
-		                        </span>
-				<input type="text" name="search" id="search" value="Marseille, France" class="input_element">
-				<input type="submit" value="Rechercher !" class="input_element">
+                        <span class="map">
+                            <a href="#"><img src="assets/picto_map.gif"></a>
+                        </span>
+				<input type="text" name="search" id="search" value="Marseille, France" class="input_elemt">
+				<input type="submit" value="Rechercher !" class="input_elemt">
 			</div>
 		</form>
 
 	</div>
 
 	<div id="filter-wrap" class="filter-wrap">
+
 		<ul aria-label="Filtres" class="filter-list">
-			<li><a href="#"><i class="fas fa-money-bill-wave" aria-hidden="true"></i>Économique</a></li>
-			<li><a href="#"><i class="fas fa-child"></i>Familial</a></li>
-			<li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
-			<li><a href="#"><i class="fas fa-dog "></i>Animaux autorisés</a></li>
+			<li><a href="#"><i class="fas fa-eye" aria-hidden="true"></i>Économique</a></li>
+			<li><a href="#"><i class="fas fa-eye"></i>Familial</a></li>
+			<li><a href="#"><i class="fa fa-angry"></i>Romantique</a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i>Animaux autorisés</a></li>
 		</ul>
 	</div>
 
-	<div id="info" class="info">
-		<span class="icon">i</span> <span>Plus de 500 logements sont disponibles dans cette ville</span>
-	</div>
+
 	<div id="row1-wrap" class="row1-wrap">
 
 		<div class="col col1 ">
-			<div class="title"><span>Hébergements à Marseille</span></div>
+			<div class="title">Hébergements à Marseille</div>
 			<a href="#" class="link_hotel">
-				<img src="images/thumbs/marcus_loke_thb.jpg" alt="marcus_loke_thb"/>
+				<img src="images/thumbs/marcus_loke_thb.jpg">
 				<span class="text_1">Auberge La Cannebière </span>
 				<span class="text_2">Nuit à partir de 25€ </span>
 				<div class="stars-wrap">
@@ -139,14 +148,11 @@
 			</a>
 		</div>
 
-		<i class="fa-solid fa-chart-line-up"></i>
-
 		<div class="col col2 ">
-			<div class="title"><span>Les plus populaires</span><i class="fas fa-chart-line "></i></div>
 			<a href="#" class="link_hotel2">
-						<span class="thumb-wrap ">
-							<img src="images/thumbs/emile_guillemot_thb.jpg">
-						</span>
+				<span class="thumb-wrap ">
+					<img src="images/thumbs/emile_guillemot_thb.jpg">
+				</span>
 				<div class="txt-wrap">
 					<span class="text_1">Hôtel Le soleil du matin</span>
 					<span class="text_2">Nuit à partir de 128€ </span>
@@ -160,9 +166,9 @@
 				</div>
 			</a>
 			<a href="#" class="link_hotel2">
-				<span class="thumb-wrap ">
-					<img src="images/thumbs/emile_guillemot2_thb.jpg">
-				</span>
+                       <span class="thumb-wrap ">
+                            <img src="images/thumbs/emile_guillemot2_thb.jpg">
+                       </span>
 				<div class="txt-wrap">
 					<span class="text_1">Au coeur de l'eau Chambres d'hôtes</span>
 					<span class="text_2">Nuit à partir de 71€ </span>
@@ -176,9 +182,9 @@
 				</div>
 			</a>
 			<a href="#" class="link_hotel2">
-						<span class="thumb-wrap ">
-						    <img src="images/thumbs/emile_guillemot3_thb.jpg">
-						</span>
+                       <span class="thumb-wrap ">
+                            <img src="images/thumbs/emile_guillemot3_thb.jpg">
+                       </span>
 				<div class="txt-wrap">
 					<span class="text_1">Hôtel Le soleil du matin</span>
 					<span class="text_2">Nuit à partir de 128€ </span>
@@ -200,49 +206,49 @@
 		<h2>Activités à Marseille</h2>
 		<div class="col1">
 			<a href="#" class="link-activ link-activ-size4 ">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/vieux_port.jpg">
-		                        </span>
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/vieux_port.jpg">
+                        </span>
 				<span class="text_1">Vieux Port </span>
 			</a>
 		</div>
 
 		<div class="col1">
 			<a href="#" class="link-activ link-activ-size3">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/pomegues_thb.jpg">
-		                        </span>
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/pomegues_thb.jpg">
+                        </span>
 				<span class="text_1">Fort de Pomègues</span>
 			</a>
-			<a href="#" class="link-activ link-activ-size2">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/frioul_thb.jpg">
-		                        </span>
+			<a href="#" class="link-activ link-activ-size1">
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/frioul_thb.jpg">
+                        </span>
 				<span class="text_1">Îles du Frioul</span>
 			</a>
 		</div>
 
 		<div class="col1">
 			<a href="#" class="link-activ link-activ-size4">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/calanques_thb.jpg">
-		                        </span>
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/calanques_thb.jpg">
+                        </span>
 				<span class="text_1">Parc National des Calanques</span>
 			</a>
 		</div>
 
 		<div class="col1">
 			<a href="#" class="link-activ link-activ-size2">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/lagarde_thb.jpg">
-		                        </span>
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/lagarde_thb.jpg">
+                        </span>
 				<span class="text_1">Notre-Dame-de-la-Garde</span>
 			</a>
 
 			<a href="#" class="link-activ link-activ-size2">
-		                        <span class="thumb-wrap ">
-		                            <img src="images/thumbs/longchamp_thb.jpg">
-		                        </span>
+                        <span class="thumb-wrap ">
+                            <img src="images/thumbs/longchamp_thb.jpg">
+                        </span>
 				<span class="text_1">Parc Lonchamp</span>
 			</a>
 		</div>
