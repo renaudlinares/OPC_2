@@ -568,10 +568,20 @@ ul
 
 
 
-/* ---- Responsive ----  */
+/* ---------                  Responsive                  ---------------  */
 /* ---- Tablette 764 ---- */
 
 @media screen and (max-width: 992px) and (min-width: 764px) {
+
+    .main_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        max-width: 764px;
+        min-width: 764px;
+        /*margin: auto;*/
+    }
+
 
     .row1-wrap .col1 {
         width: 100%;
@@ -588,12 +598,9 @@ ul
         margin-bottom: 15px;
     }
 
-
-
     .row1-wrap .col .title i.fas {
         margin-left: 57px;
     }
-
 
     .row1-wrap .col1 .link_hotel {
         margin: 0 27px 18px 18px;
@@ -610,7 +617,7 @@ ul
 
     .row1-wrap .col2 .link_hotel2 {
         width:207px;
-        margin-left: 10px;
+        margin:0 0 20px 10px;
     }
 
     .row1-wrap .col2 .link_hotel2 .txt-wrap {
@@ -634,52 +641,205 @@ ul
     }
 }
 
+/* ------- Cell Phone ------- */
 
-@media screen and (max-width: 764px)  {
+@media screen and (max-width: 763px)  {
 
     .main_wrapper {
-        max-width: 290px;
-        min-width: 290px;
 
+        max-width: 264px;
+        min-width: 264px;
+
+        margin: auto;
     }
+
 
 
     .header {
         display: flex;
         flex-direction: column;
         flex: 0 0 100%;
-
+        margin: 0 35px 0 0px;
     }
 
 
     .header .logo_home {
-        flex: 0 0 100%;
         width:auto;
-
-
-
-        margin:0;
-        background-color: #bfbfbf;
+        height:90px;
+        margin:auto;
     }
 
-
+    
     .header .nav {
-        flex: 0 0 100%;
         margin: 0;
         width:auto;
-
-        background-color: lavender;
-
-
+        justify-content: space-evenly;
     }
+
+
+    .header .nav a {
+        width: 50%;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .header .nav a:active{
+        border-top-color: white;
+        border-bottom: 4px solid #0065FC;
+        color: #aaaaaa;
+    }
+
+
+    .header .nav a:hover{
+        border-top-color: white;
+        border-bottom: 4px solid #0065FC;
+        color: #5f9fff;
+    }
+
 
     .search-wrap {
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 100%;
+        margin:25px 0 0 0;
 
     }
 
+    .filter-wrap {
+        display: contents;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .filter-wrap .filter-list{
+    }
+
+
+    .filter-wrap ul:before{
+        content:attr(aria-label);
+        margin-left:15px;
+        padding: 10px 0 5px 0;
+        width: 100%;
+    }
+
+    .filter-wrap ul {
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+        row-gap: 7px;
+    }
+
+
+    .info {
+        margin : 10px 0 0 5px;
+        text-align: inherit;
+    }
+
+    .row1-wrap {
+        margin: 15px 35px 5px 0px;
+    }
+
+
+    .row1-wrap .col2{
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px 0;
+        border-radius: 0;
+        order: -1;
+    }
+
+    .row1-wrap .col {
+        background-color: #ffffff;
+        border: none;
+        border-radius: inherit;
+    }
+
+    .row1-wrap .col .title span {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .row1-wrap .col1 .link_hotel {
+        margin: 10px 0 0 0;
+    }
+
+    .row1-wrap .col2 .link_hotel2 {
+        margin-left: 7px;
+    }
+
+    .row1-wrap .col1 .link_hotel {
+      width: 230px;
+    }
+
+    .row1-wrap .col1 .link_hotel img {
+        width: 230px;
+    }
+
+    .simple_link {
+        margin: 10px 0 0 0;
+    }
+
+    .row2-wrap {
+        margin: 15px 0 5px 10px;
+    }
+
+    .row2-wrap .col1 {
+
+        width: 230px;
+        height: 308px;
+    }
+
+
+
+    .row2-wrap .col1 .link-activ {
+
+        width: 230px;
+        height: 308px;
+        background-color: #ffffff;
+
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+
+    .row2-wrap .col1 .link-activ .thumb-wrap {
+        width: 230px;
+    }
+
+    .row2-wrap .col1 .link-activ-size1 .thumb-wrap img,
+    .row2-wrap .col1 .link-activ-size2 .thumb-wrap img,
+    .row2-wrap .col1 .link-activ-size3 .thumb-wrap img,
+    .row2-wrap .col1 .link-activ-size4 .thumb-wrap img
+    {
+     /*    height: 100px; */
+      width: 230px;
+    }
+
+    .row2-wrap .col1 .link-activ-size4 {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .row2-wrap .col1 .link-activ-size4 .thumb-wrap img{
+        /*height: 150px;*/
+        margin-bottom: -150px;
+    }
+
+/*
+
+
+ */
+
+
+
+    .footer {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .footer-list {
+        margin: 17px 0 0 15px;
+    }
+
+    .footer-list li {
+        margin-top: 6px;
+    }
 
 }
 
