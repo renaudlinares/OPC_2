@@ -227,8 +227,10 @@ ul
 }
 
 .filter-wrap ul li a  i.fas {
-    color: #5f9fff;
+
+
     position: absolute;
+    color:#0063fc;
     top:-9px;
     left:-15px;
 
@@ -372,7 +374,7 @@ ul
     display: block;
     float: left;
     margin-right: 3px;
-    background-image: url("../assets/stars.png");
+    background-image: url("../images/assets/stars.png");
     background-repeat: no-repeat;
     background-position: -9px  ;
 
@@ -705,7 +707,7 @@ ul
     }
 
     .input-wrapper input:nth-of-type(2) {
-        width: 100px;
+        width: 50px;
         height: 37px;
         color: #ffffff;
         border-color: #4f95ff;
@@ -714,7 +716,10 @@ ul
         border-left: none;
         padding: 0;
         font-size: 12px;
-
+        font-size: 0px;
+        background-image: url("../images/assets/icon_search.png");
+        background-repeat:no-repeat;
+        background-position: center;
     }
 
     .filter-wrap {

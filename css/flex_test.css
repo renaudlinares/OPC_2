@@ -23,12 +23,12 @@ body{
 .header .logo_home {
     /* display: flex; */
     background-color: azure ;
-     margin-top: 30px;
-    margin-left: 50px;
      height: 100px;
     width: 100px;
     border-radius: 10px 0px 0px 10px;
     border:solid;
+
+    flex: 0 0 100%;
 
 }
 
@@ -37,11 +37,9 @@ body{
 .header .nav {
     background-color:    cadetblue ;
     border:solid;
-    /* display: flex;  */
      width: 240px;
     height: 60px;
-   /*  align-self: last;  */
-    margin-left: auto;
+    flex: 0 0 100%;
 
 }
 
@@ -49,7 +47,6 @@ body{
     background-color: bisque;
     /* display: block; */
     width: 100%;
-    height: 220px;
     /* align-self: self-start;
     vertical-align: auto; */
 }
@@ -62,23 +59,38 @@ body{
     background-color: #4f95ff;
 }
 
-/*
-.picto-wrap .link_hotel2  .thumb {
 
-    height:150px;
-    width:100px;
+ .thumb {
+    display: flex;
+    height:350px;
+    width:250px;
     background-color: #4f95ff;
-}
-*/
-
-/*
-.picto-wrap .link_hotel  img{
-    object-fit: cover;
-   height:100px;
-
+     position: relative;
+     overflow: hidden;
 }
 
-*/
+.thumb  a{
+    display: flex;
+}
+
+.thumb  a img{
+    position: absolute;
+    top: -50px;
+    left:0;
+    opacity: 0.5;
+
+    /*object-fit: cover;*/
+    /*height:100px;*/
+
+}
+
+.thumb  a span{
+    margin-bottom: auto;
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+
 
 
 
