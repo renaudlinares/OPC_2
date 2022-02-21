@@ -1,0 +1,123 @@
+body{
+    background-color: #f2f2f2;
+    margin :0px;
+}
+
+
+.main_wrapper {
+    display: flex;
+    width: content-box;
+    background-color: #ffffff;
+    max-width: 964px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    background-color:lavender ;
+    flex-wrap: wrap;
+}
+
+.header .logo_home {
+    /* display: flex; */
+    background-color: azure ;
+     height: 100px;
+    width: 100px;
+    border-radius: 10px 0px 0px 10px;
+    border:solid;
+
+    flex: 0 0 100%;
+
+}
+
+
+
+.header .nav {
+    background-color:    cadetblue ;
+    border:solid;
+     width: 240px;
+    height: 60px;
+    flex: 0 0 100%;
+
+}
+
+.header  .filter-wrap {
+    background-color: bisque;
+    /* display: block; */
+    width: 100%;
+    /* align-self: self-start;
+    vertical-align: auto; */
+}
+
+
+.link_hotel2 .thumb-wrap {
+    height:150px;
+    width:250px;
+    margin: 30px;
+    background-color: #4f95ff;
+}
+
+
+ .thumb {
+    display: flex;
+    height:350px;
+    width:250px;
+    background-color: #4f95ff;
+     position: relative;
+     overflow: hidden;
+}
+
+.thumb  a{
+    display: flex;
+}
+
+.thumb  a img{
+    position: absolute;
+    top: -50px;
+    left:0;
+    opacity: 0.5;
+
+    /*object-fit: cover;*/
+    /*height:100px;*/
+
+}
+
+.thumb  a span{
+    margin-bottom: auto;
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
